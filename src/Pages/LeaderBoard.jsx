@@ -412,7 +412,7 @@ if (error)
       onClick={closeModal}
     >
           <div
-            className="bg-white rounded-xl shadow-xl p-6 relative max-w-lg w-full"
+            className="bg-white rounded-xl shadow-xl p-4 sm:p-6 relative max-w-lg w-full mx-5"
             onClick={(e) => e.stopPropagation()}
           >
             <h2 className="text-2xl font-bold mb-4 text-center text-purple-700">Scoring Criteria</h2>
@@ -432,7 +432,7 @@ if (error)
 
             <button
               onClick={closeModal}
-              className="absolute top-3 right-3 text-gray-500 hover:text-red-600 text-xl font-bold"
+              className="absolute top-3 right-3 text-gray-500 hover:text-red-600 text-xl font-bold bg-transparent"
             >
               &times;
             </button>
