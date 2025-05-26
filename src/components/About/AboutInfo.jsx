@@ -42,7 +42,7 @@ const AboutInfo = () => {
         >
           <img
             src="/About.jpg"
-            alt="Online Onword Logo"
+            alt="Tech Quanta Logo"
             className="w-[300px] h-auto rounded-xl shadow-2xl border border-[#00BFFF]"
           />
         </motion.div>
@@ -63,7 +63,7 @@ const AboutInfo = () => {
           </h3>
 
           <p className={`leading-relaxed mb-4 ${isDark ? "text-gray-200" : "text-gray-800"}`}>
-            Online Onword is a passionate online community that inspires and connects individuals to dive into the
+            Tech Quanta is a passionate online community that inspires and connects individuals to dive into the
             world of open source. Whether you're just starting out or already building, we provide the support and
             motivation to keep you moving forward.
           </p>

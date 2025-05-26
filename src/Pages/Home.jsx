@@ -105,7 +105,7 @@ const Home = () => {
                   className="dark:bg-black bg-transparent flex items-center justify-center space-x-2 px-6 py-3 text-sm cursor-pointer w-full"
                   onClick={() => window.open("/community-work")}
                 >
-                  <span>Upcomming Events !</span>
+                  <span>Upcoming Events !</span>
                 </HoverBorderGradient>
                 <HoverBorderGradient
                   containerClassName="rounded-full w-full sm:w-auto"
