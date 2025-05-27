@@ -47,21 +47,21 @@ useEffect(() => {
   }, []);
 
   const volunteers = [
-    { id: 1, name: "", role: "Frontend Developer",image:"memoji.webp" },
-    { id: 2, name: "Karan Kose", role: "MERN/React Native Developer",image:"/profiles/karankose.webp"  },
-    { id: 3, name: "Vishal Chourdhary", role: "Java Developer",image:"/profiles/choudharyvishal.png"  },
-    { id: 4, name: "Agrim Jain", role: "Data Scientist",image:"/profiles/jainagrim.webp"  },
-    { id: 5, name: "Arsh Choudhary", role: "Full Stack Engineer",image:"/profiles/choudharyarsh.webp"  },
-    { id: 6, name: "Jayesh Tapadiya", role: "Full Stack Developer",image:"/profiles/tapadiyajayesh.webp"  },
-    { id: 7, name: "Himanshu Sahu", role: "Data Scientist",image:"/profiles/sahuhimanshu.webp"  },
-    { id: 8, name: "Ashmeet Singh", role: "Data Engineer",image:"/profiles/singashmeet.webp" },
-    { id: 9, name: "Balram Dhakad", role: "Full Stack Developer",image:"/profiles/dhakadbalram.webp"  },
-    { id: 10, name: "Yashpreet Singh", role: "Management Head",image:"memoji.webp"  },
-    { id: 11, name: "Karen White", role: "HR Specialist",image:"memoji.webp"  },
-    { id: 12, name: "Luke Anderson", role: "Finance Lead",image:"memoji.webp"  },
-    { id: 13, name: "Maya Patel", role: "Operations",image:"memoji.webp"  },
-    { id: 14, name: "Nick Thompson", role: "Tech Lead",image:"memoji.webp" },
-    { id: 15, name: "Olivia Garcia", role: "Designer",image:"memoji.webp"  },
+    { id: 1, name: "", role: "Frontend Developer", image:"memoji.webp" },
+    { id: 2, name: "Karan Kose", role: "MERN/React Native Developer", image:"/profiles/karankose.webp"},
+    { id: 3, name: "Vishal Chourdhary", role: "Java Developer", image:"/profiles/choudharyvishal.png"},
+    { id: 4, name: "Agrim Jain", role: "Data Scientist", image:"/profiles/jainagrim.webp"},
+    { id: 5, name: "Arsh Choudhary", role: "Full Stack Engineer", image:"/profiles/choudharyarsh.webp"},
+    { id: 6, name: "Jayesh Tapadiya", role: "Full Stack Developer", image:"/profiles/tapadiyajayesh.webp"},
+    { id: 7, name: "Himanshu Sahu", role: "Data Scientist", image:"/profiles/sahuhimanshu.webp"},
+    { id: 8, name: "Ashmeet Singh", role: "Data Engineer", image:"/profiles/singashmeet.webp"},
+    { id: 9, name: "Balram Dhakad", role: "Full Stack Developer", image:"/profiles/dhakadbalram.webp"},
+    { id: 10, name: "Aniruddha Gune", role: "Frontend Developer", image:"/profiles/ani.webp"},
+    { id: 11, name: "Karen White", role: "HR Specialist", image:"memoji.webp"},
+    { id: 12, name: "Luke Anderson", role: "Finance Lead", image:"memoji.webp"},
+    { id: 13, name: "Maya Patel", role: "Operations", image:"memoji.webp"},
+    { id: 14, name: "Nick Thompson", role: "Tech Lead", image:"memoji.webp"},
+    { id: 15, name: "Olivia Garcia", role: "Designer", image:"memoji.webp"}
   ];
 
   const getBubbleSize = (width) => {
@@ -90,10 +90,10 @@ useEffect(() => {
   const verticalSpacing = bubbleSize * 2.3;
   const rows = adjustedPattern.length;
   const totalHeight = (rows - 1) * verticalSpacing + 70;
-  const requiredHeight = totalHeight + bubbleSize * 2 + 100;
+  const requiredHeight = totalHeight + bubbleSize * 2 + 500;
 
   const positions = useMemo(() => {
-    const horizontalSpacing = Math.min(160, containerSize.width * 0.12);
+    const horizontalSpacing = Math.min(160, containerSize.width * 0.16);
     const startY = (requiredHeight - totalHeight) / 2 + 80;
 
     const positions = [];
@@ -252,7 +252,7 @@ useEffect(() => {
   };
 
   return (
-    <div ref={containerRef} style={styles.container} className='flex justify-center items-center w-full bg-transparent'>
+    <div ref={containerRef} style={styles.container} className='w-full px-4 py-16 bg-transparent'>
       <div style={styles.headingContainer}>
         <h1 style={styles.heading}>Community Core Team</h1>
         <hr style={styles.separator} />
