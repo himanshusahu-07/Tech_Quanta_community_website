@@ -133,6 +133,7 @@ button:focus-visible {
 .volunteer-item:hover .volunteer-role {
   color: #eee !important;
   font-size: 15px !important;
+  transition: all 0.3s ease;
 }
 @media (max-width: 1400px) {
   .volunteer-avatar {
