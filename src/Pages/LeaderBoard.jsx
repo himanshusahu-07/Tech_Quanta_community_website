@@ -246,7 +246,7 @@ if (error)
       initial={{ opacity: 0, y: -10 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -10 }}
-      className="flex  items-center  gap-6 justify-center items-center p-2 rounded-lg bg-white dark:bg-[#1f1f1f]  dark:shadow-lg"
+      className="flex gap-6 justify-center items-center p-2 rounded-lg bg-white dark:bg-[#1f1f1f]  dark:shadow-lg"
     >
       <img
         src={searchedUser.avatar}
